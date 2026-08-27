@@ -8,7 +8,7 @@ export default function ScoreSummary({ score, total }) {
       : pct >= 70
       ? "Solid grip on Tailwind."
       : pct >= 50
-      ? "Getting there — review the misses below."
+      ? "Getting there - review the misses below."
       : "Worth another pass through the material.";
 
   return (

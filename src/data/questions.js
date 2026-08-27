@@ -1,14 +1,14 @@
 /* ============================================================
-   QUESTION BANK — 160 questions covering the full Tailwind course
+   QUESTION BANK - 160 questions covering the full Tailwind course
    (40 questions per section, drawing 30 per section practice run)
    ============================================================ */
 
 export const QUIZ_SECTIONS = [
   {
     id: "all",
-    name: "All Chapters (1–25)",
-    chapterRange: "1–25",
-    description: "Complete Tailwind Exam — 40 Qs randomly selected from 160 Bank",
+    name: "All Chapters (1-25)",
+    chapterRange: "1-25",
+    description: "Complete Tailwind Exam - 40 Qs randomly selected from 160 Bank",
     startChapter: 1,
     endChapter: 25,
     quizLength: 40,
@@ -16,9 +16,9 @@ export const QUIZ_SECTIONS = [
   },
   {
     id: "sec1",
-    name: "Chapters 1–6: Fundamentals & Core Setup",
-    chapterRange: "1–6",
-    description: "Intro, Setup, Core Ideas, Colors, Typography, Spacing — 30 Qs from 40 Pool",
+    name: "Chapters 1-6: Fundamentals & Core Setup",
+    chapterRange: "1-6",
+    description: "Intro, Setup, Core Ideas, Colors, Typography, Spacing - 30 Qs from 40 Pool",
     startChapter: 1,
     endChapter: 6,
     quizLength: 30,
@@ -26,9 +26,9 @@ export const QUIZ_SECTIONS = [
   },
   {
     id: "sec2",
-    name: "Chapters 7–12: Layout & Visual Styles",
-    chapterRange: "7–12",
-    description: "Sizing, Flexbox, CSS Grid, Backgrounds, Borders, Shadows — 30 Qs from 40 Pool",
+    name: "Chapters 7-12: Layout & Visual Styles",
+    chapterRange: "7-12",
+    description: "Sizing, Flexbox, CSS Grid, Backgrounds, Borders, Shadows - 30 Qs from 40 Pool",
     startChapter: 7,
     endChapter: 12,
     quizLength: 30,
@@ -36,9 +36,9 @@ export const QUIZ_SECTIONS = [
   },
   {
     id: "sec3",
-    name: "Chapters 13–18: States, Responsive & FX",
-    chapterRange: "13–18",
-    description: "Hover/Focus States, Mobile-First, Dark Mode, Animations — 30 Qs from 40 Pool",
+    name: "Chapters 13-18: States, Responsive & FX",
+    chapterRange: "13-18",
+    description: "Hover/Focus States, Mobile-First, Dark Mode, Animations - 30 Qs from 40 Pool",
     startChapter: 13,
     endChapter: 18,
     quizLength: 30,
@@ -46,9 +46,9 @@ export const QUIZ_SECTIONS = [
   },
   {
     id: "sec4",
-    name: "Chapters 19–25: Advanced, Config & Production",
-    chapterRange: "19–25",
-    description: "Positioning, Z-Index, Custom Config, @apply, Plugins, Best Practices — 30 Qs from 40 Pool",
+    name: "Chapters 19-25: Advanced, Config & Production",
+    chapterRange: "19-25",
+    description: "Positioning, Z-Index, Custom Config, @apply, Plugins, Best Practices - 30 Qs from 40 Pool",
     startChapter: 19,
     endChapter: 25,
     quizLength: 30,
@@ -71,9 +71,9 @@ export const QUESTION_BANK = [
   // 1. What is TailwindCSS?
   { id: 1, chapter: 1, q: "What are Tailwind's small, single-purpose classes called?", options: ["Utility classes", "Component classes", "Atomic mixins", "Style blocks"], answer: 0, explain: "Tailwind styles elements using tiny, single-purpose classes called utility classes, e.g. bg-blue-500 or px-5." },
   { id: 2, chapter: 1, q: "In the traditional CSS approach, where do you usually write your styles?", options: ["Directly in HTML", "In a separate CSS file", "In a JSON config", "Inline in JavaScript"], answer: 1, explain: "The old way writes CSS rules in a separate .css file, which grows into a hard-to-manage mess as a project scales." },
-  { id: 3, chapter: 1, q: "Which of these is NOT listed as a reason to use Tailwind?", options: ["Speed", "Consistency", "No naming problem", "Automatic SEO optimization"], answer: 3, explain: "The guide lists speed, consistency, no naming problem, and small final size — not SEO optimization." },
+  { id: 3, chapter: 1, q: "Which of these is NOT listed as a reason to use Tailwind?", options: ["Speed", "Consistency", "No naming problem", "Automatic SEO optimization"], answer: 3, explain: "The guide lists speed, consistency, no naming problem, and small final size - not SEO optimization." },
   { id: 4, chapter: 1, q: "What happens to unused CSS in a Tailwind project?", options: ["It's automatically removed", "It's minified only", "It's kept for later use", "It has to be deleted manually"], answer: 0, explain: "Tailwind automatically removes unused CSS, keeping the final stylesheet small and fast to load." },
-  { id: 5, chapter: 1, q: "How many things does each Tailwind utility class do?", options: ["Three", "Two", "One", "As many as needed"], answer: 2, explain: "Each Tailwind class does ONE thing — e.g. px-5 only adds horizontal padding." },
+  { id: 5, chapter: 1, q: "How many things does each Tailwind utility class do?", options: ["Three", "Two", "One", "As many as needed"], answer: 2, explain: "Each Tailwind class does ONE thing - e.g. px-5 only adds horizontal padding." },
 
   // 2. Setting Up Tailwind
   { id: 6, chapter: 2, q: "Which setup method is described as quick but not recommended for production?", options: ["The CDN method", "The npm method", "The CLI method", "The PostCSS-only method"], answer: 0, explain: "The CDN method is great for learning but isn't recommended for real production projects." },
@@ -84,7 +84,7 @@ export const QUESTION_BANK = [
 
   // 3. How Tailwind Works
   { id: 11, chapter: 3, q: "Tailwind class names generally follow which naming pattern?", options: ["{value}-{property}", "{property}-{value}", "{state}-{property}", "{color}-{property}"], answer: 1, explain: "Tailwind classes follow {property}-{value}, e.g. text-lg or bg-red-500." },
-  { id: 12, chapter: 3, q: "On Tailwind's default spacing scale, what does the number 4 equal?", options: ["4px", "8px", "16px", "24px"], answer: 2, explain: "On the spacing scale, 4 maps to 16px (1rem) — used in classes like p-4 or mt-4." },
+  { id: 12, chapter: 3, q: "On Tailwind's default spacing scale, what does the number 4 equal?", options: ["4px", "8px", "16px", "24px"], answer: 2, explain: "On the spacing scale, 4 maps to 16px (1rem) - used in classes like p-4 or mt-4." },
   { id: 13, chapter: 3, q: "What does the class mt-4 do?", options: ["Adds margin-top of 16px", "Adds margin-top of 4px", "Adds max-width of 4rem", "Adds padding-top of 16px"], answer: 0, explain: "mt-4 sets margin-top to 4 on the spacing scale, which equals 16px (1rem)." },
   { id: 14, chapter: 3, q: "On the spacing scale, what does the number 8 equal?", options: ["24px", "32px", "40px", "48px"], answer: 1, explain: "The number 8 on Tailwind's spacing scale equals 32px." },
   { id: 15, chapter: 3, q: "What does the class w-full set an element's width to?", options: ["Auto width", "50% width", "100% width", "The viewport width"], answer: 2, explain: "w-full sets width to 100% of its parent container." },
@@ -92,7 +92,7 @@ export const QUESTION_BANK = [
   // 4. Colors
   { id: 16, chapter: 4, q: "Tailwind color utility classes generally follow which pattern?", options: ["{shade}-{color}-{property}", "{property}-{color}-{shade}", "{color}-{shade}-{property}", "{property}-{shade}"], answer: 1, explain: "Color classes follow {property}-{color}-{shade}, e.g. text-blue-700 or bg-red-500." },
   { id: 17, chapter: 4, q: "Tailwind's color shades range from which numbers?", options: ["10 to 100", "50 to 950", "100 to 1000", "0 to 500"], answer: 1, explain: "Shades go from 50 (very light) to 950 (very dark)." },
-  { id: 18, chapter: 4, q: "Which of these is NOT one of Tailwind's listed color families?", options: ["Teal", "Cyan", "Crimson", "Rose"], answer: 2, explain: "The guide lists families like teal, cyan, and rose — 'crimson' is not one of Tailwind's named color families." },
+  { id: 18, chapter: 4, q: "Which of these is NOT one of Tailwind's listed color families?", options: ["Teal", "Cyan", "Crimson", "Rose"], answer: 2, explain: "The guide lists families like teal, cyan, and rose - 'crimson' is not one of Tailwind's named color families." },
   { id: 19, chapter: 4, q: "What does the class bg-transparent do?", options: ["Makes the background 50% see-through", "Removes the background color entirely", "Adds a white background", "Adds a gradient background"], answer: 1, explain: "bg-transparent gives an element a fully transparent (see-through) background." },
   { id: 20, chapter: 4, q: "Which class would give an element a light green background (shade 100)?", options: ["bg-green-900", "bg-green-500", "bg-green-100", "bg-lime-950"], answer: 2, explain: "Lower shade numbers like 100 are lighter, so bg-green-100 gives a light green background." },
 
@@ -210,7 +210,7 @@ export const QUESTION_BANK = [
   { id: 81, chapter: 16, q: "Which built-in animation class creates a radar-blip 'pinging' effect?", options: ["animate-ping", "animate-pulse", "animate-bounce", "animate-spin"], answer: 0, explain: "animate-ping creates an expanding, fading ping effect like a radar blip." },
 
   // 17. Transforms
-  { id: 82, chapter: 17, q: "According to the guide, what do transforms NOT do?", options: ["Change how an element looks", "Push or affect the layout of other elements", "Move an element visually", "Work with the hover state"], answer: 1, explain: "Transforms are purely visual — they move or resize an element without pushing other elements in the layout." },
+  { id: 82, chapter: 17, q: "According to the guide, what do transforms NOT do?", options: ["Change how an element looks", "Push or affect the layout of other elements", "Move an element visually", "Work with the hover state"], answer: 1, explain: "Transforms are purely visual - they move or resize an element without pushing other elements in the layout." },
   { id: 83, chapter: 17, q: "Which class rotates an element by 45 degrees?", options: ["rotate-45", "skew-45", "rotate-90", "translate-45"], answer: 0, explain: "rotate-45 rotates the element 45 degrees clockwise." },
   { id: 84, chapter: 17, q: "Which class moves an element upward (negative Y direction)?", options: ["translate-y-4", "-translate-y-4", "translate-x-4", "-translate-x-4"], answer: 1, explain: "-translate-y-4 moves the element up by translating it negatively on the Y axis." },
   { id: 85, chapter: 17, q: "Which class scales an element up to 110% of its size?", options: ["scale-90", "scale-100", "scale-110", "scale-125"], answer: 2, explain: "scale-110 scales an element up to 110% of its original size." },
@@ -268,7 +268,7 @@ export const QUESTION_BANK = [
   { id: 111, chapter: 23, q: "Which class gives an element a 16:9 aspect ratio?", options: ["aspect-square", "aspect-video", "aspect-wide", "aspect-16-9"], answer: 1, explain: "aspect-video applies a 16:9 ratio, ideal for video embeds." },
   { id: 112, chapter: 23, q: "Which class gives an element a 1:1 (square) aspect ratio?", options: ["aspect-square", "aspect-video", "aspect-even", "aspect-1"], answer: 0, explain: "aspect-square applies a 1:1 aspect ratio." },
 
-  // 24. Real Project — Landing Page
+  // 24. Real Project - Landing Page
   { id: 113, chapter: 24, q: "In the Luminary landing page example, which classes make the navbar stick to the top above other content?", options: ["relative top-0", "fixed top-0 ... z-50", "sticky bottom-0", "absolute inset-0"], answer: 1, explain: "fixed top-0 left-0 right-0 with a high z-index (z-50) keeps the navbar pinned above scrolling content." },
   { id: 114, chapter: 24, q: "What effect does bg-white/80 combined with backdrop-blur-md create on the navbar?", options: ["A solid opaque navbar", "A frosted-glass translucent navbar", "A fully transparent, blur-free navbar", "A dark-mode-only navbar"], answer: 1, explain: "Partial opacity (/80) plus backdrop-blur-md produces a frosted-glass translucent effect." },
   { id: 115, chapter: 24, q: "Which classes create the gradient text effect on 'not harder' in the hero headline?", options: ["text-white bg-blue-600", "text-transparent bg-clip-text bg-gradient-to-r", "text-gradient bg-blue-600", "bg-clip-border text-blue-600"], answer: 1, explain: "Making the text transparent and clipping a gradient background to the text shape creates gradient text." },
@@ -277,7 +277,7 @@ export const QUESTION_BANK = [
   { id: 116, chapter: 25, q: "Which VS Code extension gives autocomplete and hover previews for Tailwind classes?", options: ["Prettier", "Tailwind CSS IntelliSense", "ESLint", "Live Server"], answer: 1, explain: "The Tailwind CSS IntelliSense extension provides autocomplete, hover previews, and error highlighting." },
   { id: 117, chapter: 25, q: "Which tool automatically sorts your Tailwind classes into a consistent order?", options: ["tailwind-sort", "prettier-plugin-tailwindcss", "eslint-plugin-tailwind", "postcss-sort-classes"], answer: 1, explain: "The prettier-plugin-tailwindcss package automatically sorts Tailwind classes on save." },
   { id: 118, chapter: 25, q: "How do you apply a one-off custom value that isn't in Tailwind's default scale?", options: ["Use a !important flag", "Use square brackets, e.g. w-[350px]", "Write inline CSS only", "Edit tailwind.config.js every time"], answer: 1, explain: "Arbitrary values in square brackets, like w-[350px] or bg-[#ff6b6b], let you use one-off custom values." },
-  { id: 119, chapter: 25, q: "According to Tip 5 ('Don't Over-Engineer'), what should you generally avoid?", options: ["Using utility classes directly", "Building a complex component system you don't need", "Testing responsive design", "Using the Tailwind docs"], answer: 1, explain: "The guide warns against over-engineering — most of the time, writing utility classes directly is enough." },
+  { id: 119, chapter: 25, q: "According to Tip 5 ('Don't Over-Engineer'), what should you generally avoid?", options: ["Using utility classes directly", "Building a complex component system you don't need", "Testing responsive design", "Using the Tailwind docs"], answer: 1, explain: "The guide warns against over-engineering - most of the time, writing utility classes directly is enough." },
   { id: 120, chapter: 25, q: "Which class combination centers content both vertically and horizontally across the full screen?", options: ["flex items-center justify-center min-h-screen", "grid place-self-center", "text-center mx-auto", "absolute inset-0 flex"], answer: 0, explain: "flex items-center justify-center min-h-screen is the go-to pattern for full-screen centering." },
 
   // Section 4 expansion questions (Ch 19 - 25)

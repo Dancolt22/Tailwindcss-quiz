@@ -21,7 +21,7 @@ export default function ReviewRow({ item, number }) {
             <p className={correct ? "text-green-700" : "text-red-600"}>
               Your answer:{" "}
               {item.userIndex === undefined
-                ? "— skipped —"
+                ? "- skipped -"
                 : `${LETTERS[item.userIndex]}. ${item.question.options[item.userIndex]}`}
             </p>
             {!correct && (
